@@ -1,15 +1,13 @@
 package ro.uvt.info.sp_lab.model;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 
+@Data
 public class TableOfContents {
     private ArrayList<String> chapters;
     private Book book;
-
-    public TableOfContents(Book book) {
-        this.book = book;
-        this.chapters = new ArrayList<>();
-    }
 
     public void addChapter(String chapterTitle) {
         chapters.add(chapterTitle);
