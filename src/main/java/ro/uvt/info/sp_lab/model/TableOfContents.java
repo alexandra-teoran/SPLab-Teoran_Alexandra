@@ -1,22 +1,26 @@
 package ro.uvt.info.sp_lab.model;
 
-import lombok.Data;
 
-import java.util.ArrayList;
+public class TableOfContents implements Element{
+    private String something;
 
-@Data
-public class TableOfContents {
-    private ArrayList<String> chapters;
-    private Book book;
-
-    public void addChapter(String chapterTitle) {
-        chapters.add(chapterTitle);
+    @Override
+    public void print() {
+        System.out.println("Something: " + something);
     }
 
-    public void print() {
-        System.out.println("Table of Contents for " + ":"); // + book.getTitle() + ":");
-        for (int i = 0; i < chapters.size(); i++) {
-            System.out.println("Chapter " + (i + 1) + ": " + chapters.get(i));
-        }
+    @Override
+    public void add(Element element) {
+
+    }
+
+    @Override
+    public void remove(Element element) {
+
+    }
+
+    @Override
+    public Element get(int id) {
+        return null;
     }
 }

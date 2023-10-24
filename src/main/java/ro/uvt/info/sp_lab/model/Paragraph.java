@@ -13,4 +13,19 @@ public class Paragraph implements Element{
     public void print() {
         System.out.println("Text: " + text);
     }
+
+    @Override
+    public void add(Element element) {
+
+    }
+
+    @Override
+    public void remove(Element element) {
+
+    }
+
+    @Override
+    public Element get(int id) {
+        return null;
+    }
 }
