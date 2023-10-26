@@ -6,11 +6,13 @@ public class ImageProxy implements Element, Picture{
 
     public ImageProxy(String url) {
         this.url = url;
+        this.realImage=null;
     }
 
     @Override
     public void print() {
-        System.out.println("Image url: "+ url);
+        loadImage();
+        realImage.print();
     }
 
     @Override
