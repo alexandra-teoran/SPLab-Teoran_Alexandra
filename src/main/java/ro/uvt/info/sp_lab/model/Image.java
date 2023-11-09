@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class Image implements Element, Picture{
     private String imageName;
 
+
     public Image(String name) {
         imageName = name;
         try {
