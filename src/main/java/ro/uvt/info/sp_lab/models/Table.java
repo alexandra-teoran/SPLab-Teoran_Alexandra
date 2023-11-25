@@ -1,6 +1,7 @@
-package ro.uvt.info.sp_lab.model;
+package ro.uvt.info.sp_lab.models;
 
 import lombok.Data;
+import ro.uvt.info.sp_lab.services.Visitor;
 
 @Data
 public class Table implements Element{
@@ -27,5 +28,10 @@ public class Table implements Element{
     @Override
     public Element get(int id) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visitTable(this);
     }
 }
