@@ -1,4 +1,6 @@
-package ro.uvt.info.sp_lab.model;
+package ro.uvt.info.sp_lab.models;
+
+import ro.uvt.info.sp_lab.services.Visitor;
 
 import java.util.ArrayList;
 
@@ -31,5 +33,10 @@ public class Section implements Element{
     @Override
     public Element get(int id) {
         return elements.get(id);
+    }
+
+    @Override
+    public void accept(Visitor v) {
+        v.visitSection(this);
     }
 }

@@ -1,7 +1,11 @@
-package ro.uvt.info.sp_lab.model;
+package ro.uvt.info.sp_lab.services;
 
 
-public class AlignRight implements AlignStrategy{
+import ro.uvt.info.sp_lab.models.Context;
+import ro.uvt.info.sp_lab.models.Paragraph;
+import ro.uvt.info.sp_lab.services.AlignStrategy;
+
+public class AlignRight implements AlignStrategy {
     @Override
     public void render(Paragraph paragraph, Context context) {
         String text = paragraph.getText();

@@ -1,4 +1,4 @@
-package ro.uvt.info.sp_lab.model;
+package ro.uvt.info.sp_lab.models;
 
 public class Context {
     private int pageWidth=156;

@@ -19,4 +19,5 @@ public class ClientComponent {
     public String getClientMessage() {
         return "Hello from ClientComponent = " + this;
     }
+
 }

@@ -1,6 +1,4 @@
-package ro.uvt.info.sp_lab.model;
-
-import lombok.Data;
+package ro.uvt.info.sp_lab.models;
 
 import java.util.ArrayList;
 
