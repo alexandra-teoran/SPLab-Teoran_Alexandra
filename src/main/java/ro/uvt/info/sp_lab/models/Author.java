@@ -1,8 +1,11 @@
 package ro.uvt.info.sp_lab.models;
 
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import java.io.Serializable;
 
-public class Author {
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+public class Author implements Serializable {
     private String name;
     private String surname;
 
